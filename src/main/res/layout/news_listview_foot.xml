@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListView的头部 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/changebai"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/news_load_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="正在加载，请稍后"
+            android:textSize="17sp" />
+
+        <ProgressBar
+             android:id="@+id/news_bar"
+            android:layout_width="20dp"
+            android:layout_height="20dp" 
+            android:layout_marginLeft="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

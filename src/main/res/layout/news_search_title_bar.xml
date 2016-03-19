@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/title_bar_style" >
+    <ImageView
+        android:id="@+id/news_back_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/title_back"
+        android:onClick="newsGoBack"/>
+    <TextView
+        android:id="@+id/title_tv"
+        style="@style/title_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/news_search_title"
+        
+         />
+    <!--
+         <ImageView
+        android:id="@+id/news_search"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/news_search"
+        android:contentDescription="@string/description"
+        android:onClick="search"
+         />
+    -->
+
+</RelativeLayout>

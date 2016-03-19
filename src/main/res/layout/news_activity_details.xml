@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JokeActivity" >
+
+    <RelativeLayout
+        android:id="@+id/news_details_relative1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/title_lan"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button_fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/title_befor_return"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/news_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/news_details_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/news_details_relative1" />
+
+    <ProgressBar
+        android:id="@+id/news_details_bar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

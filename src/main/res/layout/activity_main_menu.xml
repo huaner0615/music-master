@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 头像 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <!--<ImageView-->
+                <!--android:id="@+id/setting_touxiang"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:contentDescription="@string/description"-->
+                <!--android:src="@drawable/setting_touxiang" />-->
+
+            <TextView
+                android:id="@+id/setting_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="北航音乐"
+                android:textColor="#f0f0f0"
+                android:textSize="20sp" />
+            <!--android:layout_toRightOf="@id/setting_touxiang"-->
+        </RelativeLayout>
+        <!-- 上边横线 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="#383d41" />
+        <!-- 更新联系人 -->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:clickable="true"-->
+            <!--android:focusable="true"-->
+            <!--android:onClick="updateBook"  >-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/two"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:contentDescription="@string/description"-->
+                <!--android:duplicateParentState="true"-->
+                <!--android:src="@drawable/setting_lianxiren" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_toRightOf="@id/two"-->
+                <!--android:text="@string/setting_lianxiren"-->
+                <!--android:textColor="#d1d2d3"-->
+                <!--android:textSize="14sp" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="10dp"-->
+                <!--android:layout_height="10dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:contentDescription="@string/description"-->
+                <!--android:src="@drawable/setting_right" />-->
+        <!--</RelativeLayout>-->
+        <!--&lt;!&ndash; 修改密码 &ndash;&gt;-->
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:clickable="true"-->
+            <!--android:focusable="true" -->
+            <!--android:onClick="changePassword" >-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/three"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="20dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:contentDescription="@string/description"-->
+                <!--android:duplicateParentState="true"-->
+                <!--android:src="@drawable/setting_changepass" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_toRightOf="@id/three"-->
+                <!--android:text="@string/setting_changepass"-->
+                <!--android:textColor="#d1d2d3"-->
+                <!--android:textSize="14sp" />-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="10dp"-->
+                <!--android:layout_height="10dp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:contentDescription="@string/description"-->
+                <!--android:duplicateParentState="true"-->
+                <!--android:src="@drawable/setting_right" />-->
+        <!--</RelativeLayout>-->
+        <!-- 检查更新 -->
+
+        <RelativeLayout
+            android:id="@+id/slide_button_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="slideButtonClick" >
+
+            <ImageView
+                android:id="@+id/four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/description"
+                android:duplicateParentState="true"
+                android:src="@drawable/setting_update" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/four"
+                android:text="@string/setting_scan_songs"
+                android:textColor="#d1d2d3"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/description"
+                android:duplicateParentState="true"
+                android:src="@drawable/setting_right" />
+        </RelativeLayout>
+        <!-- 设置 -->
+
+        <RelativeLayout
+            android:id="@+id/slide_button_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="slideButtonClick" >
+
+            <ImageView
+                android:id="@+id/five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/description"
+                android:duplicateParentState="true"
+                android:src="@drawable/setting_setting" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/five"
+                android:text="@string/setting_setting"
+                android:textColor="#d1d2d3"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/description"
+                android:duplicateParentState="true"
+                android:src="@drawable/setting_right" />
+        </RelativeLayout>
+        <!-- 下边横线 -->
+		<!--  
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#383d41" />
+            -->
+           <!-- 退出登录 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:focusable="true"
+            >
+
+            <ImageView
+                android:id="@+id/six"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/description"
+                android:duplicateParentState="true"
+                android:src="@drawable/setting_logout" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/six"
+                android:text="@string/setting_login"
+                android:textColor="#d1d2d3"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:contentDescription="@string/description"
+                android:duplicateParentState="true"
+                android:src="@drawable/setting_right" />
+        </RelativeLayout>
+          <!-- 下边横线 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="#383d41" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/setting_goutong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/setting_goutong_normal" />
+
+</LinearLayout>

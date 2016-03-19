@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/title_bar_style"
+    android:gravity="center_horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/book_title_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:src="@drawable/book_title_logo"
+            android:contentDescription="@string/description"/>
+
+        <TextView
+            android:id="@+id/book_title_tv"
+            style="@style/title_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

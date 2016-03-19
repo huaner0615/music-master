@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/changebai"
+    android:paddingBottom="15dp"
+    android:paddingLeft="13dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp" >
+
+    <!-- 缩略图 -->
+
+    <ImageView
+        android:id="@+id/thumb"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:contentDescription="@string/description" />
+    <!-- 标题 -->
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        android:layout_toRightOf="@+id/thumb"
+        android:gravity="top"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="#333333"
+        android:textSize="15sp" />
+    <!-- 简介 -->
+
+    <TextView
+        android:id="@+id/brief"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/thumb"
+        android:layout_gravity="center"
+        android:maxLines="2"
+        android:minLines="1"
+        android:text="人民网"
+        android:textColor="#9a9a9a"
+        android:textSize="13sp" />
+    <!-- 时间 -->
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_below="@+id/brief"
+        android:layout_toRightOf="@+id/thumb"
+        android:text="新华网"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+    <!-- 阅读次数 -->
+
+    <TextView
+        android:id="@+id/views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/brief"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/time"
+        android:text="10小时前"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+
+   
+
+</RelativeLayout>

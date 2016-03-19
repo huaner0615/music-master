@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <!-- 标题 -->
+    <RelativeLayout
+        android:id="@+id/news_details_relative1"
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="@color/title_lan"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/setting_fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/title_befor_return"
+            android:text="@string/setting_return"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/news_detail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/setting_title"
+            android:textColor="#ffffff"
+            android:textSize="20sp"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical" >
+    <!-- 个人设置 -->
+
+    <!-- -->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="left"-->
+    <!--android:gravity="left"-->
+    <!--android:layout_marginTop="15dp"-->
+    <!--android:text="@string/setting_person_set"-->
+    <!--android:textColor="#1599ec"-->
+    <!--android:textSize="14sp" />-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:background="#46b7fe"-->
+    <!--/>-->
+    <!--&lt;!&ndash; 更改密码 &ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/setting_lin_changepass"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" -->
+    <!--android:onClick="changePassword">-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="@string/setting_changepass"-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="16sp" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:background="#cccaca" />-->
+    <!-- 更新联系人 -->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/setting_lin_lanxiren"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="left"-->
+    <!--android:onClick="updateBook" >-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/setting_lianxiren"-->
+    <!--android:textSize="16sp" />-->
+    <!--</LinearLayout>-->
+    <!-- 弹窗设置 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:gravity="left"
+        android:text="@string/setting_play"
+        android:textColor="#1599ec"
+        android:textSize="14sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#46b7fe"/>
+    <!-- 弹窗开关 -->
+    <LinearLayout
+        android:id="@+id/setting_lin_yonghuxinxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/setting_below"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+        <com.buaa.view.SwitchButton
+            android:id="@+id/setting__below_switch"
+            style="@style/SwitchButtonStyle"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#cccaca"/>
+    <!-- 延迟弹出窗口 -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="delay">
+
+        <TextView
+            android:id="@+id/setting_bangding_wenzi"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/setting_auto_start"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+        <com.buaa.view.SwitchButton
+            android:id="@+id/setting_auto_start_switch"
+            style="@style/SwitchButtonStyle"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#cccaca"/>
+    <!-- 弹出窗口位置 -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="position">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/setting_close_net"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+        <com.buaa.view.SwitchButton
+            android:id="@+id/setting_close_net_switch"
+            style="@style/SwitchButtonStyle"/>
+    </LinearLayout>
+
+
+    <!-- 软件相关 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="15dp"
+        android:gravity="left"
+        android:text="@string/setting_about_soft"
+        android:textColor="#1599ec"
+        android:textSize="14sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#46b7fe"/>
+    <!-- 检查更新 -->
+    <LinearLayout
+        android:id="@+id/setting_jianchagengxin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:text="@string/setting_update"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/setting_version_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical"
+            android:textColor="#ff9c00"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#cccaca"/>
+    <!-- 意见反馈 -->
+    <LinearLayout
+        android:id="@+id/setting_guanyuwomen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:text="@string/setting_suguess"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"/>
+</LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
